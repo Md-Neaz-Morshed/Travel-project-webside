@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header div {
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 30px;
+    padding: 20px;
+}
+
+header .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 80px;
+}
+
+header .nav ul {
+    list-style: none;
+}
+
+header .nav ul li {
+    float: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .nav ul li a:hover {
+    color: #7f97ff;
+}
+
+.margin {
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    width: 100%;
+}
+S
+
+.slider {
+    position: relative;
+    width: 1300px;
+    height: 450px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+}
+
+/* css for manual and automatic navigation start here */
+.navigation-manual,
+.navigation-auto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.manual-btn,
+.navigation-auto div {
+    border: 3px solid rgb(0, 255, 221);
+    padding: 5px;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.manual-btn:not(:last-child),
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: rgb(0, 255, 221);
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: rgb(0, 255, 221);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: rgb(0, 255, 221);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: rgb(0, 255, 221);
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: rgb(0, 255, 221);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+
+
+.half1 h1 {
+    text-align: center;
+    color: #fb8b27;
+    font-size: 50px;
+
+}
+
+.half1 input {
+    padding: 12px 25px;
+    background-color: #8393ff;
+    outline: none;
+    color: white;
+    border: 1px solid #8393ff;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+/*Section Three Start */
+.section3 {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.firsttext h1 {
+    font-size: 40px;
+    line-height: 10px;
+}
+
+.firsttext p {
+    width: 670px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+}
+
+.service {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.ser1,
+.ser2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ser2 {
+    padding-top: 30px;
+}
+
+.ser1 div,
+.ser2 div {
+    width: 32%;
+    float: left;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.service i {
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.service h1 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.service p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ser1 div:hover {
+    background-color: #8293ff;
+    color: white;
+}
+
+.ser1 div:hover i {
+    color: white;
+}
+
+.ser1 div:hover h1 {
+    color: white;
+}
+
+.ser1 div:hover p {
+    color: white;
+}
+
+.ser2 div:hover {
+    background-color: #8293ff;
+}
+
+.ser2 div:hover i {
+    color: white;
+}
+
+.ser2 div:hover h1 {
+    color: white;
+}
+
+.ser2 div:hover p {
+    color: white;
+}
+
+/*Section Three End */

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Booking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+
+
+
+        <header>
+            <div class="logo">
+                  <img src="https://i.postimg.cc/8k36s0W8/Screen-Shot-2023-05-17-at-11-33-26-PM-removebg-preview-1.png" alt="Enjoy Travel">
+              </div>
+              <div class="nav">
+                  <ul>
+                      <li><a href="index.html"> </a>  <a href="Start planning.html">Start Planning </a></li>
+                      <li><a href="index.html"> </a>  <a href="Home.html">Home</a></li>
+                      <li><a href="index.html"> </a>  <a href="Gallery.html">Gallery</a></li>
+                      <li><a href="index.html"> </a>  <a href="About.html">About</a></li>
+                      <li><a href="index.html"> </a>  <a href="Contact.html">Contact</a></li>
+                      <li><a href="index.html"> </a>  <a href="Log In.html">Log in</a></li>
+                      <li><a href="index.html"> </a>  <a href="Registration.html"> Registration</a></li>
+                      
+                  </ul>
+              </div>
+          </header>
+    
+    
+         
+          
+          
+          
+
+
+        <h1>Tour Booking System</h1>
+    </header>
+    <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          
+          
+    <main>
+        <h2>Book your Tour</h2>
+        <div class="booking-form">
+            <div>
+                <h3>Hotel Booking</h3>
+                <input type="text" placeholder="Enter hotel name">
+                <input type="date" placeholder="Select check-in date">
+                <input type="date" placeholder="Select check-out date">
+                <button onclick="bookHotel()">Book Hotel</button>
+            </div>
+            <div>
+                <h3>Transport Booking</h3>
+                <input type="text" placeholder="Enter pickup location">
+                <input type="text" placeholder="Enter drop-off location">
+                <input type="date" placeholder="Select pick-up date">
+                <input type="time" placeholder="Select pick-up time">
+                <button onclick="bookTransport()">Book Transport</button>
+            </div>
+            <div>
+                <h3>Places to Visit</h3>
+                <input type="text" placeholder="Enter place name">
+                <input type="date" placeholder="Select visit date">
+                <input type="number" placeholder="Enter number of visitors">
+                <button onclick="bookPlace()">Book Place</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tour Booking System. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <style>
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header div{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo{
+    margin-left:30px ;
+    padding: 20px;
+}
+
+
+header .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 80px;
+}
+
+
+header .nav ul{
+    list-style: none;
+}
+
+
+header .nav ul li{
+    float: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+header .nav ul li a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+header .nav ul li a:hover{
+    color: #7f97ff; 
+}
+
+
+
+
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    .booking-form {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    input {
+        margin-bottom: 10px;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+
+<script>
+function bookHotel() {
+    const hotelName = document.querySelector('input[placeholder="Enter hotel name"]').value;
+    const checkInDate = document.querySelector('input[placeholder="Select check-in date"]').value;
+    const checkOutDate = document.querySelector('input[placeholder="Select check-out date"]').value;
+
+    // Perform hotel booking logic
+    // ...
+    console.log(`Hotel booking - Hotel: ${hotelName}, Check-in: ${checkInDate}, Check-out: ${checkOutDate}`);
+}
+
+function bookTransport() {
+    const pickupLocation = document.querySelector('input[placeholder="Enter pickup location"]').value;
+    const dropOffLocation = document.querySelector('input[placeholder="Enter drop-off location"]').value;
+    const pickUpDate = document.querySelector('input[placeholder="Select pick-up date"]').value;
+    const pick
+
+</script>
+}
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Enjoy Travel</title>
+</head>
+<body>
+    
+    <header>
+      <div class="logo">
+            <img src="https://i.postimg.cc/8k36s0W8/Screen-Shot-2023-05-17-at-11-33-26-PM-removebg-preview-1.png" alt="Enjoy Travel">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"> </a>  <a href="Start planning.html">Start Planning </a></li>
+                <li><a href="index.html"> </a>  <a href="Home.html">Home</a></li>
+                <li><a href="index.html"> </a>  <a href="Gallery.html">Gallery</a></li>
+                <li><a href="index.html"> </a>  <a href="About.html">About</a></li>
+                <li><a href="index.html"> </a>  <a href="Contact.html">Contact</a></li>
+                <li><a href="index.html"> </a>  <a href="Log In.html">Log in</a></li>
+                <li><a href="index.html"> </a>  <a href="Registration.html"> Registration</a></li>
+                
+            </ul>
+        </div>
+    </header>
+  <section class="section1">
+    
+            <!-- image slider start here -->
+   
+     <div class="slider">
+        <div class="slides">
+            <!-- radio btn start here -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- image start here -->
+            <div class="slide first">
+                <img src="https://i.postimg.cc/MpStbcBD/Travel1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/7YDTKSBf/Travel2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/2yC877zY/Travel3.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/kGj9Fr1N/Travel4.jpg" alt="">
+            </div>
+            <!-- automatic navigation start here -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- manual navigation start here -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- image slider js start here -->
+    <script>
+        var counter =1;
+        setInterval(function() {
+            document.getElementById('radio'+counter).checked =true;
+            // counter = counter +1;
+            counter++;
+            if(counter>4)counter=1;
+        },
+            4000);
+         
+    </script>
+
+
+
+
+              <div class="half1">
+                
+                <h1> Welcome to Tour Planners</h1>
+                
+                <p align="justify">Bangladesh creates an unforgettable impression of a land of peace, tranquility and enormous beauty; Bangladesh is the land of hundreds of serpentine rivers, crystal clear water lakes surrounded by evergreen hills, luxuriant tropical rain forests, beautiful cascades of green tea gardens. In Bangladesh located the natural and World's largest mangrove forest-a World Heritage home of the Royal Bengal Tigers and other wild lives; World's longest natural unbroken sea beach, rich cultural heritage, relics of ancient Buddhist civilizations; Bangladesh have colorful ethnic minorities with their primitive life style and culture; old terracotta mosques, temples, churches, historic monuments archeological sites; The best tourism assets Bangladesh have friendly and lively peoples and hidden beauty everywhere. Bangladesh is the Largest delta in the world which rises from the Bay of Bengal and goes up to the footsteps of the Himalayas. Bangladesh is a country where grass is so green, sky is so blue and the health is so clean..</p>
+                
+                 <input type="button" value="Start Planning">        
+            </div>       
+    </section>
+  
+  
+    <!--Section Three Start-->
+    <section class="section3">
+        <div class="firsttext">
+            <h1> Our Services</h1>
+            <p>We do our best to meet the customer expectation and their comfort. .</p>
+        </div>
+        <div class="service">
+            <div class="ser1">
+                <div>
+                    <i class="fas fa-child"></i>
+                    <h1>Package Tour</h1>
+                    <p>“Useful for traveling from one place to another in Bangladesh according to various packages at low cost.”</p>
+                </div>
+                <div>
+                    <i class="fas fa-plane"></i>
+                    <h1>Transports</h1>
+                    <p>“All cars are equipped with all essential modern facilities and give you every comfort to make your journey memorable forever.”</p>
+                </div>
+                <div>
+                     <i class="fas fa-hotel"></i>
+                    <h1>Hotel Reservation</h1>
+                    <p>“Nice and friendly staff. The rooms is very comfortable.”</p>
+                </div>
+            </div>
+
+            <div class="ser2">
+                <div>
+                    <i class="fas fa-utensils"></i>
+                    <h1>Food Facilities</h1>
+                    <p>“There is an excellent arrangement of all types of food.”</p>
+                </div>
+                <div>
+                    <i class="fas fa-skating"></i>
+                    <h1>Tour Guide</h1>
+                    <p>“Each place has a tour guide to ensure a safe visit.”</p>
+                </div>
+                <div>
+                    <i class="fas fa-camera"></i>
+                    <h1>Photography</h1>
+                    <p>“Photography is available to make the travel days memorable”</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Section Three End-->
+  
+   </body>
+  </html>
